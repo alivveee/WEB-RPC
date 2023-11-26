@@ -1,11 +1,19 @@
 {
-  "name": "web-rpc",
+  "name": "web-rtc",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "budo index.js:bundle.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "getusermedia": "^2.0.1",
+    "simple-peer": "^9.11.1"
+  },
+  "devDependencies": {
+    "budo": "^11.8.4"
+  }
 }
