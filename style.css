@@ -150,12 +150,28 @@ form.message {
 /* Tambahkan ini untuk <pre> */
 #messages {
   position: absolute;
-  top: calc(100% + 8em); /* Menempatkan di bawah img 1em */
+  top: calc(100% + 1em); /* Menempatkan di bawah img 1em */
   left: 0;
   width: 100%;
-  height: auto; /* Menyesuaikan tinggi sesuai dengan konten */
+  max-height: 260px; /* Menyesuaikan tinggi sesuai dengan konten */
   overflow-y: auto; /* Menambahkan scrollbar jika diperlukan */
-  margin-top: 1em; /* Memberi jarak dengan elemen lain */
+  margin-top: 1em;  /* Memberi jarak dengan elemen lain */
+}
+
+.other-message {
+  align-self: flex-start;
+  background-color: #c5e1a5; /* Set the background color for 'Other' messages */
+  padding: 5px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.you-message {
+  align-self: flex-end;
+  background-color: rgb(155, 209, 251); 
+  padding: 5px;
+  margin: 10px;
+  border-radius: 5px;
 }
 
 .sign-btn-message {

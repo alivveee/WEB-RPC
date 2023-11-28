@@ -32,6 +32,12 @@ peer.on("data", (data) => {
 
 function addMessage(message) {
   const messagesElement = document.getElementById("messages");
-  messagesElement.innerText += message + "\n";
+
+  const messageDiv = document.createElement("div");
+  messageDiv.className = message.startsWith("Other") ? "other-message" : "you-message";
+  messageDiv.innerText = message;
+
+  messagesElement.appendChild(messageDiv);
+
   messagesElement.scrollTop = messagesElement.scrollHeight;
 }
